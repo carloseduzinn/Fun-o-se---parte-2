@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Nome do primeiro funcionario: <span id="nome1"></span></p>
+    <p>Vendas: <span id="vendas"></span></p>
+    <p>Nome do segundo funcionario: <span id="nome2"></span></p>
+    <p>Vendas: <span id="vendas2"></span></p>
+    <p>Vencedor: <span id="mensagem"></span></p>
+    <p>Perdedor: <span id="perdeu"></span></p>
+
+    <script>
+        let nome1 = prompt("Nome primeiro funcionario")
+        let vendas = Number (prompt("Valor de vendas de um funcionario"))
+        let nome2 = prompt ("Nome do segundo funcionario")
+        let vendas2 = Number (prompt("Digite o segundo valor de vendas de um funcionario"))
+        let meta = 1500
+
+        if (vendas >= meta)
+         {
+            mensagem = "O " + nome1 + " Voce ganhou o premio!"
+            perdeu = "O " + nome2 + "Não Ganhou"
+        }
+        else{vendas2 >= meta
+        mensagem = "Ganhou"
+        perdeu = "O " + nome1 + " Ganhou"
+        }
+
+        document.getElementById("nome1").innerHTML=nome1
+        document.getElementById("vendas").innerHTML=vendas
+        document.getElementById("nome2").innerHTML=nome2
+        document.getElementById("vendas2").innerHTML=vendas2 
+        document.getElementById("mensagem").innerHTML=mensagem
+        document.getElementById("perdeu").innerHTML=perdeu;
+</script>
+    
+</body>
+</html>

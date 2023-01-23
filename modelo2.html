@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>A diferença e de: <span id="resultado"></span></p>
+    <script>
+        let nmr = Number (prompt("Digite um numero"))
+        //guarda o primeiro numero digitado
+        let nmr2 = Number (prompt ("Digite outro numero"))
+        
+
+        if (nmr < nmr2){
+            reserva = nmr
+            nmr = nmr2
+            nmr2 = reserva
+        }
+        resultado = nmr - nmr2;
+
+ document.getElementById("resultado").innerHTML=resultado;
+    </script>
+    
+</body>
+</html>
+
